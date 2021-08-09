@@ -31,11 +31,11 @@ function checkLetter(word, letter){
 
 function start(){
     word=answer.value;
-    if(!word) changeMessage('Enter word, please');
+    if(!word) changeMessage('Enter a word, please!!!');
     else{remainingLetter=word.length;
     arrayAnswer=getArrayAnswer();
     info.innerHTML=`Word is ${arrayAnswer.length} letters <br>
-    <p>${arrayAnswer.join('')}</p> <br> Enter letter`;
+    <p style='color:red; font-size:30px; font-weight: 600;'>${arrayAnswer.join('')}</p> <br> Enter letter`;
     answer.remove();
     btn.remove();
     answer.type='text';
@@ -51,16 +51,16 @@ function start(){
 function play(){
     let input=letter.value;
     if(checkLetter(word, input)){
-        info.innerHTML=`Super! <p>${arrayAnswer.join('')}</p> <br>
+        info.innerHTML=`Super! <p style='color:red; font-size:30px; font-weight: 600;'>${arrayAnswer.join('')}</p> <br>
         one more letter?`;
         if(remainingLetter==0){
-            info.innerHTML=`Super! <p>${arrayAnswer.join('')}</p> <br> The end`;
+            info.innerHTML=`Super! <p style='color:red; font-size:30px; font-weight: 600;'>${arrayAnswer.join('')}</p> <br> The end!`;
             letter.remove();
             checkBtn.remove();
         }
         letter.value='';
     }else{
-        info.innerHTML=`No such letter <br> <p>${arrayAnswer.join('')}</p><br>
+        info.innerHTML=`No such letter <br> <p style='color:red; font-size:30px; font-weight: 600;'>${arrayAnswer.join('')}</p><br>
         one more letter?`;
         letter.value='';
     }
