@@ -31,7 +31,7 @@ function checkLetter(word, letter){
 
 function start(){
     word=answer.value;
-    if(!word) changeMessage('Enter word');
+    if(!word) changeMessage('Enter word, please');
     else{remainingLetter=word.length;
     arrayAnswer=getArrayAnswer();
     info.innerHTML=`Word is ${arrayAnswer.length} letters <br>
@@ -67,7 +67,7 @@ function play(){
 }
 
 function changeMessage(message){
-    document.querySelector('#inputText').innerHTML=message;
+    document.querySelector('#infoText').innerHTML=message;
 }
 
 btn.addEventListener('click', start);
