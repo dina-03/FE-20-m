@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-family:  'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+}
+.wrapper{
+    width: 600px;
+    margin: 20px auto;
+    color: rgb(49, 71, 168);
+    _border: 1px solid black;
+}
+
+.wrapper h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text{
+    width: 300px;
+    height: 35px;
+}
+
+.filmsList{
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    width: 430px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+ul li{
+    list-style: decimal;
+    text-align: left;
+    margin-left: 7%;
+    padding: 10px 0 10px 7px;
+    margin-top: 5px;
+    background-color: rgb(237, 247, 250);
+}
