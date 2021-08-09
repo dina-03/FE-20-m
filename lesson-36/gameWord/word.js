@@ -30,9 +30,9 @@ function checkLetter(word, letter){
 }
 
 function start(){
-    word=arrayAnswer.value;
+    word=answer.value;
     if(!word) changeMessage('Enter word');
-    else{remainingLetter=word.length;}
+    else{remainingLetter=word.length;
     arrayAnswer=getArrayAnswer();
     info.innerHTML=`Word is ${arrayAnswer.length} letters <br>
     <p>${arrayAnswer.join('')}</p> <br> Enter letter`;
@@ -45,6 +45,7 @@ function start(){
     checkBtn.innerText='check';
     checkBtn.id='checkBtn';
     box.append(checkBtn);
+    }
 }
 
 function play(){
