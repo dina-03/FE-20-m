@@ -1,0 +1,47 @@
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+input{
+    width: 450px;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(95, 158, 160, 0.493);
+    color: #000;
+}
+.user-details{
+    width: 70%;
+    border: 1px solid cadetblue;
+    background-color: rgba(245, 245, 220, 0.5);
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.user-details:hover{
+    background-color: aliceblue;
+}
+.users-list{
+    width: 350px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.box{
+    width: 250px;
+    background-color: aliceblue;
+    padding: 15px;
+    color: cadetblue;
+}
+.box h3{
+    color: cadetblue;
+}
