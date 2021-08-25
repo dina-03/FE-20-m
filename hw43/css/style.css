@@ -1,0 +1,15 @@
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+input{
+    width: 250px;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 40px;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+}
