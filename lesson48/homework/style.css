@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    _border: 1px solid cadetblue;
+    border-radius: 5px;
+    padding: 20px 0;
+}
+.users-list{
+    width: 350px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid cadetblue;
+    padding: 35px 0 0 20px;
+    border-radius: 5px;
+    _background-color: aliceblue;
+}
+.wrapper span{
+    font-size: 18px;
+    color: rgb(141, 140, 140);
+}
+.wrapper h3{
+    color: cadetblue;
+    font-size: 25px;
+}
