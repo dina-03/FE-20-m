@@ -155,3 +155,7 @@ background-size: cover;
     font-weight: 600;
     color: brown;
 }
+.message-list div:hover{
+    background-color: rgba(115, 193, 245, 0.233);
+}
+

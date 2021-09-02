@@ -43,6 +43,13 @@ export function renderAddCommentForm(messageId){
             cols="40" rows="2"
             placeholder="Type comment"
         ></textarea><br>
+            <input
+            id="message_${messageId}"
+            class = 'message-title'
+            type="text"
+            name="ucomment"
+            placeholder="Type comment"
+        />
         <button class="add-btn" name ="button">Add comment</button>
     </form>
     <h4 id="not-found-user" class ="hide">no such user!</h4>

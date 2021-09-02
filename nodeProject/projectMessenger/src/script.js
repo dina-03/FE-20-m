@@ -84,11 +84,14 @@ function checkNameHandler(event){
         comment.onsubmit = (event)=>{
             event.preventDefault();                                     
             const messageId = +event.target.ucomment.id.split('_')[1]; 
+            event.preventDefault();                                    //                              [0, 3, 'one', 5] 
+            const messageId = +event.target.ucomment.id.split('_')[1]; //const [,messageId] = event.target.ucomment.id.split('_')
             console.log(messageId);
             const newComment = new Comment(
                 userId,
                 event.target.ucomment.value,
                 new Date().toLocaleDataString()
+                new Date().toLocaleString()
                 )
             addCommentToMessage(messageId, newComment);
             const message = messages.find(m => m.id == messageId);
