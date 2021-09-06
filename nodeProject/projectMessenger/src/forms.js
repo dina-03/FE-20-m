@@ -35,6 +35,14 @@ export function renderAddCommentForm(messageId){
         <button class="add-btn" name = "button">Send</button>
     </form>
     <form name = "comment" action = "#" class = "hide">
+            <textarea
+            id="message_${messageId}"
+            class = 'textArea'
+            type="text"
+            name="ucomment"
+            cols="40" rows="2"
+            placeholder="Type comment"
+        ></textarea><br>
             <input
             id="message_${messageId}"
             class = 'message-title'

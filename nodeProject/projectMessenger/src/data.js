@@ -10,6 +10,8 @@ const users=[
     new User('Gena Balkin', 'Hamburg')]
 
 const messages = [
+
+    new Message(0, 'Hello', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, sed?', new Date().toLocaleString()),
     new Message(0, 'Hello', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, sed?', new Date().toLocaleDateString()),
     new Message(0, 'Title02', 'Lorem ipsum dolor sit amet consectetur. Odit, sed?', new Date().toLocaleDateString()),
     new Message(0, 'Title03', 'Lorem ipsum dolor adipisicing elit. Odit, sed?', new Date().toLocaleDateString()),
@@ -23,6 +25,7 @@ const messages = [
     new Message(2, 'Uraaa!', 'Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum ', new Date().toLocaleDateString()),
     new Message(2, 'Visitor', 'Однажды одна маленькая строчка рыбного текста по имени', new Date().toLocaleDateString()),
     new Message(2, 'Graf', 'по дороге встретил текст рукопись. ', new Date().toLocaleDateString()),
+    new Message(3, 'Prosto Text', 'Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. ', new Date().toLocaleString()),
     new Message(3, 'Prosto Text', 'Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. ', new Date().toLocaleDateString()),
     new Message(3, 'A Hto ego znaet?', 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.', new Date().toLocaleDateString()),
     new Message(2, 'И такое бывает', 'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.', new Date().toLocaleDateString()),
@@ -30,6 +33,24 @@ const messages = [
     new Message(3, 'Шутка', ' Даже всемогущая пунктуация не имеет власти над рыбными текстами', new Date().toLocaleDateString()),
 ]
 
+
+addCommentToMessage(1,new Comment(0, 'very good', new Date().toLocaleDateString()));
+addCommentToMessage(0,new Comment(2, 'nice to see you', new Date().toLocaleDateString()));
+addCommentToMessage(0,new Comment(3, 'good', new Date().toLocaleDateString()));
+addCommentToMessage(0,new Comment(1, 'bad', new Date().toLocaleDateString()));
+addCommentToMessage(2,new Comment(2, 'das war schön!', new Date().toLocaleDateString()));
+addCommentToMessage(10,new Comment(2, 'круто', new Date().toLocaleDateString()));
+addCommentToMessage(12,new Comment(3, 'не могу не согласиться', new Date().toLocaleDateString()));
+addCommentToMessage(3,new Comment(4, 'не могу не согласиться', new Date().toLocaleDateString()));
+addCommentToMessage(5,new Comment(2, 'не могу не согласиться', new Date().toLocaleDateString()));
+addCommentToMessage(9,new Comment(1, 'не могу не согласиться', new Date().toLocaleDateString()));
+addCommentToMessage(9,new Comment(3, 'не могу не согласиться', new Date().toLocaleDateString()));
+addCommentToMessage(8,new Comment(1, 'проще нужно относиться ко всему', new Date().toLocaleDateString()));
+addCommentToMessage(15,new Comment(0, 'это просто чума!!!', new Date().toLocaleDateString()));
+addCommentToMessage(4,new Comment(3, 'это просто чума!!!', new Date().toLocaleDateString()));
+addCommentToMessage(6,new Comment(3, 'это просто чума!!!', new Date().toLocaleDateString()));
+addCommentToMessage(7,new Comment(3, 'это просто чума!!!', new Date().toLocaleDateString()));
+addCommentToMessage(17,new Comment(3, 'это просто чума!!!', new Date().toLocaleDateString()));
 addCommentToMessage(1,new Comment(0,0, 'very good', new Date().toLocaleDateString()));
 addCommentToMessage(0,new Comment(2,1, 'nice to see you', new Date().toLocaleDateString()));
 addCommentToMessage(0,new Comment(3,0, 'good', new Date().toLocaleDateString()));
@@ -47,6 +68,7 @@ addCommentToMessage(4,new Comment(3,2, 'это просто чума!!!', new Da
 addCommentToMessage(6,new Comment(3,2, 'это просто чума!!!', new Date().toLocaleDateString()));
 addCommentToMessage(7,new Comment(3,2, 'это просто чума!!!', new Date().toLocaleDateString()));
 addCommentToMessage(17,new Comment(3,2, 'это просто чума!!!', new Date().toLocaleDateString()));
+
 
 export function findUserById(id){
     return users.find(user=>user.id===id)
