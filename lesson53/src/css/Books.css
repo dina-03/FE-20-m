@@ -1,0 +1,37 @@
+.book{
+    width: 300px;
+    text-align: left;
+    border: 1px solid rgb(5, 186, 192);
+    margin: 10px;
+    padding: 10px 20px;
+    padding-left: 30px;
+}
+.book:hover{
+    background-color: rgba(207, 245, 250, 0.479);
+}
+.book h2{
+    color: brown;
+}
+.book button{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(199, 237, 240);
+    border: 1px solid rgb(80, 219, 243);
+    border-radius: 5px;
+    _display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 5px;
+}
+.book span{
+    display: block;
+    margin: 10px 0;
+    _padding: 20px 0;
+    color: darkcyan;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+.book img{
+    width: 250px;
+}
